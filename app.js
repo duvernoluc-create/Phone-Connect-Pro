@@ -1,0 +1,1 @@
+const modal=document.getElementById('modal');document.getElementById('pairBtn').onclick=()=>modal.classList.add('show');document.getElementById('close').onclick=()=>modal.classList.remove('show');document.getElementById('ok').onclick=()=>modal.classList.remove('show');modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('show')});

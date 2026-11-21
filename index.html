@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Phone Connect Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="logo">▣<span class="signal">⌁</span></div><div><b>Phone Connect</b><small>PRO</small></div></div>
+    <nav>
+      <a class="active">◫ &nbsp; Dashboard</a><a>▤ &nbsp; Notifications</a><a>◉ &nbsp; WhatsApp Alerts</a><a>☎ &nbsp; Calls</a><a>▣ &nbsp; Device</a><a>⚙ &nbsp; Settings</a>
+    </nav>
+    <div class="side-bottom"><div class="secure">🔒 Secure connection<br><small>Private device dashboard</small></div></div>
+  </aside>
+  <main>
+    <header><div><h1>Dashboard</h1><p>Monitor your business phone from your Mac.</p></div><div class="profile"><span class="dot"></span> Demo mode <div class="avatar">P</div></div></header>
+    <section class="device">
+      <div class="device-icon">📱</div><div class="device-info"><h2>My Android Phone</h2><p>Pair your Android companion app to begin</p></div>
+      <div class="status"><span class="dot gray"></span> Not connected</div>
+      <button id="pairBtn">Connect device</button>
+    </section>
+    <section class="stats">
+      <article><div class="stat-icon blue">▤</div><span>Notifications</span><strong id="notifCount">0</strong><small>Waiting for phone connection</small></article>
+      <article><div class="stat-icon green">◉</div><span>WhatsApp alerts</span><strong id="waCount">0</strong><small>Notification previews only</small></article>
+      <article><div class="stat-icon purple">☎</div><span>Calls</span><strong>—</strong><small>Android app integration needed</small></article>
+      <article><div class="stat-icon orange">▣</div><span>Battery</span><strong>—</strong><small>Connect your device</small></article>
+    </section>
+    <section class="grid">
+      <article class="panel messages"><div class="panel-head"><div><h3>Recent alerts</h3><p>Messages shown from phone notifications</p></div><button class="ghost">View all</button></div>
+      <div class="empty"><div class="empty-icon">🔔</div><b>No alerts yet</b><p>Install the Android companion app and grant Notification Access to see alerts here.</p></div></article>
+      <article class="panel connection"><div class="panel-head"><div><h3>Connection setup</h3><p>Securely pair your Android device</p></div></div>
+        <ol><li><span>1</span> Install the Phone Connect Android app</li><li><span>2</span> Sign in and pair with this dashboard</li><li><span>3</span> Enable Notification Access on Android</li><li><span>4</span> Keep background connection enabled</li></ol>
+        <div class="notice">WhatsApp message previews are available only when Android notifications show message content. This dashboard does not bypass WhatsApp security or read private chats directly.</div>
+      </article>
+    </section>
+    <footer>Phone Connect Pro · Private dashboard · <span>Android companion app required for live data</span></footer>
+  </main>
+</div>
+<div class="modal" id="modal"><div class="modal-card"><button class="close" id="close">×</button><div class="modal-logo">▣</div><h2>Connect your phone</h2><p>This website is ready for pairing. The Android companion app is the next component needed for live notifications.</p><div class="pair-code">ANDROID APP REQUIRED</div><button id="ok">Got it</button></div></div>
+<script src="app.js"></script>
+</body>
+</html>
